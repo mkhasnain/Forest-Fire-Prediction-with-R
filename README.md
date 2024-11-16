@@ -32,3 +32,23 @@ In this section I will perform an EDA on the forest fire dataset and note down t
 Importing the csv file of the dataset into a variable called “fire_data” in R, using the code:
 
 fire_data <- read.csv("D:\\Study\\forestfires.csv")
+
+head(fire_data, 5)
+
+str(fire_data)  # Overview of the dataset
+
+summary(fire_data)  # Summary of all variables
+
+We can check the column names of the imported Dataset by using the following code:
+colnames(fire_data)
+
+We can check the dimensions of the dataset by using the code:
+dim(fire_data)
+
+By looking at the results we can say that there are 517 rows and 13 columns.
+
+### 2.2 Missing Values:
+Let’s check the missing values in the dataset and decide how to handle it (e.g., imputation, removal) by using the following code:
+sum(is.na(fire_data))
+
+
